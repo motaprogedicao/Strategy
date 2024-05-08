@@ -2,12 +2,12 @@ public class Geometrica implements ICalcMedia {
 
     @Override
     public double CalculaMedia(double P1, double P2) {
-        return Media ;
+        return Math.sqrt(P1 * P2) ;
     }
 
     @Override
     public String Situacao(double Media) {
-        if(Media > 5){
+        if(Media >= 7.0){
             return "Aprovado";
         }else{
             return "Reprovado";
